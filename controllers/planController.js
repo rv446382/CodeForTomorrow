@@ -1,6 +1,6 @@
 const planModel = require('../models/planModel');
 
-// create new plan
+//create new plan
 async function createPlan(req, res) {
     const { name, monthlyQuota, extraChargePerUnit } = req.body;
 
@@ -17,7 +17,7 @@ async function createPlan(req, res) {
     }
 }
 
-//get plan by id
+// get plan by id 
 async function getPlan(req, res) {
     const planId = parseInt(req.params.id);
 
